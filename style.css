@@ -1,0 +1,17 @@
+body { 
+    background: rgb(163, 149, 177);
+    
+}
+.firstHeader {
+    width: 2000px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    margin-top: 300px; /* Отступ сверху */
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+    font-size: 70px;
+}
+
+.navigation {
+    margin-left: auto;
+    margin-right: 0em;
+}
