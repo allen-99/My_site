@@ -2,97 +2,138 @@
 <html lang = "ru">
     <head>
         <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" type="text/css"/>
-       
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     </head>
     <body>
-        <section>
+        <section class="headOfSite">
             <nav class="navigation">
-                <a href="#description">о дурачке</a> |
-                <a href="#cats">фотокарточки</a> |
-                <a href="#sharlotka">рецепт шарлотки</a> |
-                <a href="#facts">достижения дурачка</a> |
-                <a href="mailto:kriuchkova.ni@students.dvfu.ru">почта</a>
+                <a class="navHref" href="#description" >описание</a> |
+                <a class="navHref" href="#cats">галерея</a> |
+                <a class="navHref" href="#sharlotka">рецепт шарлотки</a> |
+                <a class="navHref" href="#facts">достижения</a> |
+                <div class="dropDown">
+                    <button class="mainBut">средства связи</button>
+                    <div class="dropMenu">
+                        <a class="dropElem" href="mailto:kriuchkova.ni@students.dvfu.ru">сюда чтобы письма писать</a>
+                        <a class="dropElem" href="https://vk.com/album200546529_000">сюда чтобы мемы смотреть</a>
+                        <a class="dropElem" href="https://instagram.com/natalya._.k">сюда чтобы фотки смотреть</a>
+                        <a class="dropElem" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">сюда за вечным...</a>
+                    </div>
+                </div>
+
             </nav>
             <h1 class= "firstHeader"> NATHANIEL</h1>
-            <p > Студент группы Б9119-09.03.04 специальности Программная инженерия. 
-                Уже 20 лет надежд на светлое (нефильтрованное) будущее. Люблю играть в баскетбол и думаю у меня это неплохо получается. </p>
-        </section>
+            <div class="firstParagraf"> 
+            <p> Студент группы Б9119-09.03.04 специальности Программная инженерия.  </p>
+            <p>
+                Уже 20 лет надежд на светлое (нефильтрованное) будущее. Люблю играть в баскетбол и думаю у меня это неплохо получается.
+            </p>
+            </div>
+            <hr class="hrAfterHead" >
+            </section>
         <section>
-            <hr>
-            <h2 class="header2" id="description">описание</h2>
-            <blockquote>
-                <h3>Полное имя: Крючкова Наталья Юрьевна</h3>
-                <h3>Пол: ламинат</h3>
-                <h3>Рост: достает до верхней полки</h3>
-                <h3>Любимый цвет: черный</h3>
+
+            <a class="header2" id="bestArcticle" href="https://www.youtube.com/watch?v=_rW9a9Z4YbI&t=54s&ab_channel=Green_Sad_Frog">описание</a>
+            <!-- <h2 class="header2">описание</h2> -->
+            <blockquote >
+                <h3 class="descriptionFirst">Полное имя: Крючкова Наталья Юрьевна</h3>
+                <h3 class="descriptionFirst">Пол: ламинат</h3>
+                <h3 class="descriptionFirst">Рост: достает до верхней полки</h3>
+                <h3 class="descriptionFirst">Любимый цвет: черный</h3>
 
             </blockquote>
-            <hr>
+            <hr class="hrAfterHead">
         </section>
-        <section id="cats">
-            <picture >
-                <source media="(min-width: 1024px)" srcset="img/cat1.JPG">
-                <source media="(min-width: 768px)" srcset="">
-                <source media="(min-width: 360px)" srcset="">
-                <img class= "catImg" src="img/cat1.JPG" alt="cat 1" height="500" width="500">
-            </picture>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="img/cat2.JPG">
-                <source media="(min-width: 768px)" srcset="">
-                <source media="(min-width: 360px)" srcset="">
-                <img class= "catImg" src="img/cat2.JPG" alt="cat 2" height="500" width="500">
-            </picture>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="img/cat3.JPG">
-                <source media="(min-width: 768px)" srcset="">
-                <source media="(min-width: 360px)" srcset="">
-                <img class= "catImg" src="img/cat3.JPG" alt="cat 3" height="500" width="500">
-            </picture>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="img/cat4.JPG">
-                <source media="(min-width: 768px)" srcset="">
-                <source media="(min-width: 360px)" srcset="">
-                <img class= "catImg" src="img/cat4.JPG" alt="cat 4" height="500" width="500">
-            </picture>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="img/cat5.JPG">
-                <source media="(min-width: 768px)" srcset="">
-                <source media="(min-width: 360px)" srcset="">
-                <img class= "catImg" src="img/cat5.JPG" alt="cat 5" height="500" width="500">
-            </picture>
+
+        <h2 class="header2" id="cats"> галерея</h2>
+        <section class="awSlider">
+
+            <div  class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target=".carousel" data-slide-to="0" class="active"></li>
+                    <li data-target=".carousel" data-slide-to="1"></li>
+                    <li data-target=".carousel" data-slide-to="2"></li>
+                    <li data-target=".carousel" data-slide-to="3"></li>
+                    <li data-target=".carousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/cat1.png" height="550" width="800">
+                        <div class="carousel-caption">котя #1</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/cat2.png" height="550" width="800">
+                        <div class="carousel-caption">котя #2</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/cat3.png" height="550" width="800">
+                        <div class="carousel-caption">котя #3</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/cat4.png" height="550" width="800">
+                        <div class="carousel-caption">котя #4</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/cat5.png" height="550" width="800">
+                        <div class="carousel-caption">котя #5</div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">лево</span>
+                </a>
+                <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">право</span>
+                </a>
+            </div>
         </section>
+        <hr class="hrAfterHead">
         <section>
            <h2 class="header2" id="facts"> список (недо)достижений</h2> 
-           <ul>
+           <ol class="bullet" >
                 <li>посмотрела весь Наруто</li>
                 <li>мои друзья говорят, что я хороший человек</li>
                 <li>30 часов игры в The Binding of Isaac (это не много, но зато честная работа)</li>
                 <li>все еще не отчислилась из универа</li>
                 <li>думаю, что умею делать вкусный кофе</li>
                 <li>понимаю красно-черные деревья</li>
+                <li>галерею выше создавала я</li>
 
-           </ul>
+           </ol>
         </section>
+
         <section>
             <h2 class="header2" id="sharlotka">рецепт шарлотки</h2>
-            <ul>
-                <li>Для приготовления шарлотки нам понадобятся четыре некрупных яблока, лучше отдавать предпочтение кислым сортам. Очищаем яблоки от плодоножек и семечек, нарезаем тонкими дольками.</li>
-                <li>Для приготовления теста просеиваем муку с разрыхлителем. Оставляем на время</li> 
-                <li>Охлажденные куриные яйца разбиваем в высокую посуду и взбиваем с помощью миксера, постепенно увеличивая скорость. Добавляем сахарный песок. Продолжаем взбивать, пока масса не посветлеет и не увеличится в объеме.</li>
-                <li>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Для приготовления шарлотки нам понадобятся четыре некрупных яблока, лучше отдавать предпочтение кислым сортам. Очищаем яблоки от плодоножек и семечек, нарезаем тонкими дольками.</li>
+                <li class="list-group-item">Для приготовления теста просеиваем муку с разрыхлителем. Оставляем на время</li> 
+                <li class="list-group-item">Охлажденные куриные яйца разбиваем в высокую посуду и взбиваем с помощью миксера, постепенно увеличивая скорость. Добавляем сахарный песок. Продолжаем взбивать, пока масса не посветлеет и не увеличится в объеме.</li>
+                <li class="list-group-item">
                     Ставим скорость миксера на минимум и постепенно добавляем просеянную муку с разрыхлителем. Тесто должно получиться густым, как сметана, и быть однородным.</li>
-                <li>Форму для выпечки смазываем сливочным маслом и присыпаем мукой (можно вместо муки посыпать панировочными сухарями с сахаром, так у готовой шарлотки появится хрустящая карамельная корочка) Кладем в форму подготовленные яблочные дольки, равномерно распределяем.</li>
-                <li>С помощью ложки или лопатки перекладываем тесто в форму, покрывая яблоки, и разравниваем.</li>
-                <li>Разогреваем духовку до 170 градусов. Ставим форму на решётку и отправляем в духовку на 30–35 минут. Когда шарлотка увеличится в объеме и станет светло-коричневого цвета, достаем ее из духовки, немного остужаем и вынимаем из формы. Лучше всего перевернуть тёплую шарлотку на решётку и дать ей остыть, так пирог получится более ровным.</li>
-                <li>Готовую воздушную шарлотку, с помощью мелкого сита, посыпаем сахарной пудрой и, нарезав на порционные кусочки, подаем к столу.</li>
+                <li class="list-group-item">Форму для выпечки смазываем сливочным маслом и присыпаем мукой (можно вместо муки посыпать панировочными сухарями с сахаром, так у готовой шарлотки появится хрустящая карамельная корочка) Кладем в форму подготовленные яблочные дольки, равномерно распределяем.</li>
+                <li class="list-group-item">С помощью ложки или лопатки перекладываем тесто в форму, покрывая яблоки, и разравниваем.</li>
+                <li class="list-group-item">Разогреваем духовку до 170 градусов. Ставим форму на решётку и отправляем в духовку на 30–35 минут. Когда шарлотка увеличится в объеме и станет светло-коричневого цвета, достаем ее из духовки, немного остужаем и вынимаем из формы. Лучше всего перевернуть тёплую шарлотку на решётку и дать ей остыть, так пирог получится более ровным.</li>
+                <li class="list-group-item">Готовую воздушную шарлотку, с помощью мелкого сита, посыпаем сахарной пудрой и, нарезав на порционные кусочки, подаем к столу.</li>
 
             </ul>
         </section>
-        
+
         
     </body>
     <footer>
-
+        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="caruselPhoto.js"></script>
     </footer>
 </html>
