@@ -47,7 +47,7 @@ let messages = [];
 
 function onchang() {
 
-
+    document.getElementById("urText").focus();
     let urText = document.getElementById("urText");
     let dive = document.createElement('div');
     dive.className = "alertText";
@@ -65,6 +65,7 @@ function onchang() {
 
 window.onload = function() {
 
+    document.getElementById("urText").focus();
     if (localStorage.getItem('messgs') !== null)
     {
         messages = JSON.parse(localStorage.getItem('messgs'));
@@ -81,7 +82,10 @@ window.onload = function() {
 
 
 }
-
+document.getElementById("urText").addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        onchang();
+    }});
 
 let phrasez = ['да','нет','зачем?','ты уверен?','не думаю что это хорошая идея','скучно','я вызываю полицию','маме привет','Алиса Аликаева пуська']
 
@@ -97,10 +101,14 @@ function youMessage(){
     document.getElementById("himText").value = "";
 
 }
+document.getElementById("himText").addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        youMessage();
+    }});
 function answerFromHim(word){
     let urText = phrasez[Math.floor(Math.random() * (phrasez.length))];
-    if (word === 'да') urText = 'пизда';
-    if (word === 'нет') urText = 'пидора ответ';
+    // if (word === 'да') urText = 'пизда';
+    // if (word === 'нет') urText = 'пидора ответ';
     if (word === 'на добром') urText = 'на счастливом';
     if (word === 'люблю тебя') urText = 'и я тебя, кит';
     let dive = document.createElement('div');
