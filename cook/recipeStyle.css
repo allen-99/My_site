@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    background: rgb(202, 184, 219);
+    font-family: 'Roboto Slab', serif;
+}
+
+.header2 {
+    font-size: 24pt;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto Slab', serif;
+    padding: 20px;
+    font-weight: bold
+
+}
+
+.headOfSite {
+    padding: 80px;
+    background-image: url("https://recepty.24tv.ua/resources/photos/recipe/1200x675_DIR/202001/40445c962e2-9485-46f3-a4f8-87c34c2f5233.png?1581929027000");
+    background-size:cover;
+}
+.list-group-item {
+    background: rgb(202, 184, 219);
+    size: 14pt;
+}

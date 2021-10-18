@@ -206,7 +206,3 @@ body {
     content: counter(li);
     size: 12pt;
 }
-.list-group-item {
-    background: rgb(202, 184, 219);
-    size: 14pt;
-}

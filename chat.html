@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="chat.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    </head>
+    <body>
+    <div class="headOfSiteChat">
+    <nav class="navigation">
+        <a class="navHref" href="index.html" >описание</a> |
+        <a class="navHref" href="index.html">галерея</a> |
+        <div class="dropDown">
+            <button class="mainBut" > рецепты для пацанов </button> |
+            <div class="dropMenu" style="background-color: rgba(0,0,0,0.7)">
+                <a class="dropElem" href="cook/recipe.html"
+                   style="color: antiquewhite">шарлотка</a>
+
+            </div>
+        </div>
+        <a class="navHref" href="chat.html">беседы </a> |
+        <div class="dropDown">
+            <button class="mainBut">средства связи</button>
+            <div class="dropMenu" style="background-color: rgba(0,0,0,0.7)">
+                <a class="dropElem" href="mailto:kriuchkova.ni@students.dvfu.ru"
+                   style="color: antiquewhite">сюда чтобы письма писать</a>
+                <a class="dropElem" href="https://vk.com/album200546529_000"
+                   style="color: antiquewhite">сюда чтобы мемы смотреть</a>
+                <a class="dropElem" href="https://instagram.com/natalya._.k"
+                   style="color: antiquewhite">сюда чтобы фотки смотреть</a>
+                <a class="dropElem" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                   style="color: antiquewhite">сюда за вечным...</a>
+            </div>
+        </div>
+    </nav>
+     <section class="dialogs">
+         <div class="tab">
+             <button class="tablinks" onclick="openCity(event, 'FirstDialog')">Беседа с собой</button>
+             <button class="tablinks" onclick="openCity(event, 'SecondDialog')">Беседа с кем-то</button>
+         </div>
+
+         <div class="FirstPage">
+             <div class = "FirstArticle">
+                 <h3>Здесь вы можете поговорить, либо с собой, либо не с собой</h3>
+             </div>
+         </div>
+
+         <div id="FirstDialog" class="tabcontent">
+             <h3 >Беседа с собой</h3>
+             <hr>
+             <div id="urPlace" class = "scroll">
+             </div>
+             <div class = "inputLine">
+
+                 <label style="width: 100%">
+                     <input id="urText" type="text" style="width: 75%">
+                     <input name="urButton" class = "sendButton" type="button" value="отправить" onclick="onchang()" >
+                 </label>
+             </div>
+         </div>
+
+         <div id="SecondDialog" class="tabcontent">
+             <h3 >Беседа с кем-то</h3>
+             <hr>
+             <div id="himPlace" class = "scroll">
+             </div>
+             <div class = "himLine">
+                 <label style="width: 100%">
+                     <input id="himText" type="text" style="width: 75%">
+                     <input name="himButton" class = "sendButton" type="button" value="отправить" onclick="youMessage()" >
+                 </label>
+             </div>
+         </div>
+     </section>
+    <div>
+
+    </div>
+    </div>
+
+    </body>
+<footer>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="caruselPhoto.js"></script>
+</footer>
+</html>

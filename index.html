@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,8 +14,14 @@
             <nav class="navigation">
                 <a class="navHref" href="#description" >описание</a> |
                 <a class="navHref" href="#cats">галерея</a> |
-                <a class="navHref" href="#sharlotka">рецепт шарлотки</a> |
-                <a class="navHref" href="#facts">достижения</a> |
+                <div class="dropDown">
+                    <button class="mainBut">рецепты для пацанов </button> |
+                    <div class="dropMenu">
+                        <a class="dropElem" href="cook/recipe.html">шарлотка</a>
+
+                    </div>
+                </div>
+                <a class="navHref" href="chat.html">беседы </a> |
                 <div class="dropDown">
                     <button class="mainBut">средства связи</button>
                     <div class="dropMenu">
@@ -24,7 +31,6 @@
                         <a class="dropElem" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">сюда за вечным...</a>
                     </div>
                 </div>
-
             </nav>
             <h1 class= "firstHeader"> NATHANIEL</h1>
             <div class="firstParagraf"> 
@@ -112,21 +118,7 @@
            </ol>
         </section>
 
-        <section>
-            <h2 class="header2" id="sharlotka">рецепт шарлотки</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Для приготовления шарлотки нам понадобятся четыре некрупных яблока, лучше отдавать предпочтение кислым сортам. Очищаем яблоки от плодоножек и семечек, нарезаем тонкими дольками.</li>
-                <li class="list-group-item">Для приготовления теста просеиваем муку с разрыхлителем. Оставляем на время</li> 
-                <li class="list-group-item">Охлажденные куриные яйца разбиваем в высокую посуду и взбиваем с помощью миксера, постепенно увеличивая скорость. Добавляем сахарный песок. Продолжаем взбивать, пока масса не посветлеет и не увеличится в объеме.</li>
-                <li class="list-group-item">
-                    Ставим скорость миксера на минимум и постепенно добавляем просеянную муку с разрыхлителем. Тесто должно получиться густым, как сметана, и быть однородным.</li>
-                <li class="list-group-item">Форму для выпечки смазываем сливочным маслом и присыпаем мукой (можно вместо муки посыпать панировочными сухарями с сахаром, так у готовой шарлотки появится хрустящая карамельная корочка) Кладем в форму подготовленные яблочные дольки, равномерно распределяем.</li>
-                <li class="list-group-item">С помощью ложки или лопатки перекладываем тесто в форму, покрывая яблоки, и разравниваем.</li>
-                <li class="list-group-item">Разогреваем духовку до 170 градусов. Ставим форму на решётку и отправляем в духовку на 30–35 минут. Когда шарлотка увеличится в объеме и станет светло-коричневого цвета, достаем ее из духовки, немного остужаем и вынимаем из формы. Лучше всего перевернуть тёплую шарлотку на решётку и дать ей остыть, так пирог получится более ровным.</li>
-                <li class="list-group-item">Готовую воздушную шарлотку, с помощью мелкого сита, посыпаем сахарной пудрой и, нарезав на порционные кусочки, подаем к столу.</li>
-
-            </ul>
-        </section>
+       
 
         
     </body>
