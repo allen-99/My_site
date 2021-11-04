@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="games.css" type="text/css"/>
+    <link rel="stylesheet" href="../style.css" type="text/css"/>
+</head>
+<body>
+<section class="headOfSite">
+    <nav class="navigation">
+        <a class="navHref" href="../index.html" >описание</a> |
+        <a class="navHref" href="../index.html">галерея</a> |
+        <div class="dropDown">
+            <button class="mainBut" > рецепты для пацанов </button> |
+            <div class="dropMenu" style="background-color: rgba(0,0,0,0.7)">
+                <a class="dropElem" href="../cook/recipe.html"
+                   style="color: antiquewhite">шарлотка</a>
+
+            </div>
+        </div>
+        <a class="navHref" href="../chat.html">беседы </a> |
+        <div class="dropDown">
+            <button class="mainBut">средства связи</button>
+            <div class="dropMenu" style="background-color: rgba(0,0,0,0.7)">
+                <a class="dropElem" href="mailto:kriuchkova.ni@students.dvfu.ru"
+                   style="color: antiquewhite">сюда чтобы письма писать</a>
+                <a class="dropElem" href="https://vk.com/album200546529_000"
+                   style="color: antiquewhite">сюда чтобы мемы смотреть</a>
+                <a class="dropElem" href="https://instagram.com/natalya._.k"
+                   style="color: antiquewhite">сюда чтобы фотки смотреть</a>
+                <a class="dropElem" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                   style="color: antiquewhite">сюда за вечным...</a>
+            </div>
+        </div>
+        <div class="dropDown" >
+            <button class="mainBut" >игрули </button>
+            <div class="dropMenu" style="background-color: rgba(0,0,0,0.7)">
+                <a class="dropElem"  style="color: antiquewhite" href="twentyOnePilots.html">пилоты</a>
+                <a class="dropElem" style="color: antiquewhite"  href="whackamole.html">драка с кротами</a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <section class="game">
+        <div id="forScore" style="display: block">
+            <div id="dataScore" style="display: none" ></div>
+        </div>
+        <div id="forTime" style="display: block">
+            <div id="dataTime" style="display: none" ></div>
+        </div>
+        <div class="inputLine">
+            <h3 id="articleFirst">Двадцать один пилот</h3>
+            <p id="definition" class="def">Суть игры в том, чтобы тыкоть до тех пор, пока все ячейки не окажутся закрашенными. Чтобы начать игру, введите размер поля от 2 до 5 и нажмите на кнопку, чтобы начать игру.</p>
+            <input id="inputSize" class="inline" type="text" min="3" max="9" >
+            <input id="inputButton" class="butt" type="button" value="тык" onclick="startGame()">
+        </div>
+        <div id="grid">
+
+
+
+        </div>
+    </section>
+</section>
+<script src="top_script.js"> </script>
+</body>
+</html>

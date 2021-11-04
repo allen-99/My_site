@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+.headOfSite {
+    font-family: 'Roboto Slab', serif;
+    font-size: 12pt;
+    background-image: url("img/Catalina Evening_chat.png");
+    height: 800px;
+}
+
+
+.blockX{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 4px double #231F20;
+    background: #81748d;
+    margin: 3px;
+
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 12pt;
+}
+.butt {
+    background-color: antiquewhite;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.inline{
+    margin: 5px;
+    background: rgba(250,235,215,0.7);
+}
+.grid{
+    flex-wrap: wrap;
+    display: inline-block;
+    position: center;
+}
+.def{
+    width: 70%;
+}
