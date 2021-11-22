@@ -31,23 +31,18 @@ function startGame(){
                 const squares = document.querySelectorAll('.blockX');
                 let count = 0;
                 squares.forEach(square =>{
-
                     if (square.id[0] === i && square.id[1] !== j && !isWin){
                         swap(square);
-
                     }
                     if (square.id[0] !== i && square.id[1] === j && !isWin){
                         swap(square);
-
                     }
                     if (square.id[0] === i && square.id[1] === j && !isWin){
                         swap(square);
-
                     }
                     if (square.classList.contains('mole')){
                         count++;
                     }
-
                 })
                 if (!isWin) shots += 1;
                 if (count === size*size && !isWin){

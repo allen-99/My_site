@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../style.css" type="text/css"/>
 </head>
 <body>
-<section class="headOfSite" id="bg" >
+<section class="headOfSite" id="bg">
     <nav class="navigation">
         <a class="navHref" href="../index.html" >описание</a> |
         <a class="navHref" href="../index.html">галерея</a> |
@@ -42,7 +42,7 @@
         </div>
     </nav>
     <hr>
-    <section class="game">
+    <section class="game"  style="height: 430px; width: 1000px" >
         <div id="forScore" style="display: block">
             <div id="dataScore" style="display: none" ></div>
         </div>
@@ -50,18 +50,32 @@
             <div id="dataTime" style="display: none" ></div>
         </div>
         <div class="inputLine">
-            <h3 id="articleFirst">Двадцать один пилот</h3>
-            <p id="definition" class="def">Суть игры в том, чтобы тыкоть до тех пор, пока все ячейки не окажутся закрашенными. Чтобы начать игру, введите размер поля от 2 до 5 и нажмите на кнопку, чтобы начать игру.</p>
-            <input id="inputSize" class="inline" type="text" min="3" max="9" >
-            <input id="inputButton" class="butt" type="button" value="тык" onclick="startGame()">
+            <h3 id=>Время до конца начала</h3>
+            <p id="definition">Введи количество часов/минут/секунд для таймера.</p>
+            <div>
+                <input class="input" type="text" id="hours">
+                <label class="input" id="labelHours"> : часы </label>
+            </div>
+            <div>
+                <input class="input" type="text" id="minutes">
+                <label class="input" id="labelMinutes"> : минуты</label>
+            </div>
+            <div>
+                <input class="input" type="text" id="seconds">
+                <label class="input" id="labelSeconds"> : секунды</label>
+            </div>
+            <input id="inputButton" class="butt, input" type="button" value="тык" onclick="startGame()">
         </div>
-        <div id="grid">
-
-
-
+        <div class="gridTimer">
+            <label id="displayHours"></label>
+            <label class="gridTimer" id="one" style="display: none">:</label>
+            <label id="displayMinutes"></label>
+            <label class="gridTimer" id ="two" style="display: none">:</label>
+            <label id="displaySeconds"></label>
         </div>
+
     </section>
 </section>
-<script src="top_script.js"> </script>
+<script src="timer_script.js"> </script>
 </body>
 </html>
