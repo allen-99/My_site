@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="56eb1476-eb97-42f1-8bbe-3ebf4b97d05e" name="allenServer">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="167.172.165.142" port="22" sshConfigId="97e38f15-d5c6-49ab-aa02-28c0635c69fa" sshConfig="root@167.172.165.142:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
