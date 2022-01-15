@@ -88,7 +88,7 @@ document.getElementById("urText").addEventListener('keypress', function (e) {
         onchang();
     }});
 
-let phrasez = ['да','нет','зачем?','ты уверен?','не думаю что это хорошая идея','скучно','я вызываю полицию','маме привет','Алиса Аликаева пуська']
+let phrasez = ['да','нет','зачем?','ты уверен?','не думаю что это хорошая идея','скучно','я вызываю полицию','маме привет','помогите меня тут заперли','слава советскому союзу']
 
 function youMessage(){
     let urText = document.getElementById("himText");
@@ -108,8 +108,8 @@ document.getElementById("himText").addEventListener('keypress', function (e) {
     }});
 function answerFromHim(word){
     let urText = phrasez[Math.floor(Math.random() * (phrasez.length))];
-    // if (word === 'да') urText = 'пизда';
-    // if (word === 'нет') urText = 'пидора ответ';
+    if (word === 'да') urText = 'пизда';
+    if (word === 'нет') urText = 'пидора ответ';
     if (word === 'на добром') urText = 'на счастливом';
     if (word === 'люблю тебя') urText = 'и я тебя, кит';
     let dive = document.createElement('div');
