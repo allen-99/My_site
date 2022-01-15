@@ -1,4 +1,4 @@
-export default function cat(parent) {
+export default function girl(parent) {
     const node = document.createElement('img');
     const txt = document.createElement('h1');
     txt.innerHTML = "Самая лучшая девочка";
@@ -8,5 +8,13 @@ export default function cat(parent) {
     node.width = 600;
     node.height = 900;
     parent.append(node);
-
+    const back = document.createElement('a');
+    back.innerHTML = 'назад';
+    back.style.font = 'Roboto Slab';
+    back.style.fontSize = '30px';
+    back.style.padding = '5px';
+    back.style.display = 'table';
+    back.style.color = 'rgba(0, 0, 0, 0.7)';
+    back.href = '../../index.html';
+    parent.append(back);
 }

@@ -1,5 +1,6 @@
-import cat from './second.js';
+import girl from './second.js';
+
 window.onload = function () {
     const body = document.querySelector('body');
-    cat(body);
+    girl(body);
 };
