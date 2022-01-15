@@ -108,8 +108,8 @@ document.getElementById("himText").addEventListener('keypress', function (e) {
     }});
 function answerFromHim(word){
     let urText = phrasez[Math.floor(Math.random() * (phrasez.length))];
-    if (word === 'да') urText = 'пизда';
-    if (word === 'нет') urText = 'пидора ответ';
+    // if (word === 'да') urText = 'пизда';
+    // if (word === 'нет') urText = 'пидора ответ';
     if (word === 'на добром') urText = 'на счастливом';
     if (word === 'люблю тебя') urText = 'и я тебя, кит';
     let dive = document.createElement('div');
